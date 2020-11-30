@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:background="#8FA880"
+    >
+
+
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="20dp"
+        android:layout_marginLeft="5dp"
+        >
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:id="@+id/txtHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get Registered here!!"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="0"
+                android:padding="3dip"
+                android:text="UserName"
+                android:textColor="@color/black"
+
+
+                />
+
+            <EditText
+                android:id="@+id/edUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <requestFocus/>
+            </EditText>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="0"
+                android:padding="3dip"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/teal_700" />
+
+            <EditText
+                android:id="@+id/edPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="0"
+                android:padding="3dip"
+                android:text="Confirm Password"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/teal_700" />
+
+            <EditText
+                android:id="@+id/edConfirmPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="0"
+                android:padding="3dip"
+                android:text="First Name"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/teal_700" />
+
+            <EditText
+                android:id="@+id/edFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="0"
+                android:padding="3dip"
+                android:text="Last Name"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/teal_700" />
+
+            <EditText
+                android:id="@+id/edLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="0"
+                android:padding="3dip"
+                android:text="Phone"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/teal_700" />
+
+            <EditText
+                android:id="@+id/edPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="0"
+                android:padding="3dip"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/teal_700" />
+
+            <EditText
+                android:id="@+id/edEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <TableRow android:layout_height="18dp">
+
+            <CheckBox
+                android:id="@+id/chkPolicy"
+                android:paddingLeft="3dip"
+                android:layout_column="1"
+                android:buttonTint="#ffffff"
+                android:text="I agree to the policy and terms."
+                android:onClick="setChkPolicy"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:gravity="right"
+            android:paddingRight="3dip"
+            android:layout_marginTop="-16dp">
+
+            <Button
+                android:id="@+id/btnRegisterUser"
+                android:text="Register"
+                android:enabled="false"
+                android:onClick="insertData"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:onClick="logOffHandler"
+        android:layout_gravity="end"
+        android:layout_marginTop="150dp"
+        android:text="Log Off" />
+
+
+</LinearLayout>
