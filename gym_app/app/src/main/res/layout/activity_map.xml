@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/relLout1"
+        android:layout_width="match_parent"
+        android:layout_height="489dp"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:elevation="10dp"
+
+        >
+
+
+        <EditText
+            android:id="@+id/edTxtPhone"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="264dp"
+            android:hint="Phone" />
+
+        <Button
+            android:id="@+id/btnLogOffRegister"
+            android:layout_width="162dp"
+            android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="-7dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="444dp"
+            android:text="LogMeoff"
+            android:onClick="logOffRegister"/>
+
+        <EditText
+            android:id="@+id/edTxtName"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="-102dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="357dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edTxtEmail"
+            android:layout_width="231dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="224dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="225dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/edTxtAddress"
+            android:layout_width="237dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="133dp"
+            android:layout_marginBottom="311dp"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edTxtWebsite"
+            android:layout_width="232dp"
+            android:layout_height="39dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="267dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="183dp"
+            android:ems="10"
+            android:hint="Website"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edTxtWorkingHrs"
+            android:layout_width="232dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="154dp"
+            android:layout_marginTop="306dp"
+            android:layout_marginBottom="145dp"
+            android:ems="10"
+            android:hint="Working Hours"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="440dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="1dp"
+            android:text="Save"
+            android:onClick="saveData"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="440dp"
+            android:layout_marginEnd="99dp"
+            android:layout_marginBottom="1dp"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/btnBackToAdmin"
+            android:layout_width="156dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="233dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginBottom="396dp"
+            android:text="Back to Admin" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginBottom="149dp"
+            android:text="Working Hours" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginBottom="193dp"
+            android:text="Website" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="231dp"
+            android:text="Email" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="277dp"
+            android:text="Phone" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="143dp"
+            android:text="Address" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginBottom="370dp"
+            android:text="Name" />
+
+        <CheckBox
+            android:id="@+id/chkMapTag"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="6dp"
+            android:text='View / Mark Location'
+            android:onClick="mapFinder"/>
+
+        <EditText
+            android:id="@+id/input_search"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="103dp"
+            android:layout_marginBottom="94dp"
+            android:ems="10"
+            android:hint="Gym Location"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnLocate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="91dp"
+            android:onClick="locateMap"
+            android:text="Locate" />
+
+        <EditText
+            android:id="@+id/edTxtTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="181dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="46dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Tag Name" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginBottom="63dp"
+            android:text="Tag" />
+
+        <Button
+            android:id="@+id/btnViewClients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="-4dp"
+            android:layout_marginBottom="445dp"
+            android:text="View Clients"
+            android:onClick="viewClientsHandler"/>
+
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="214dp"
+        tools:context=".MapActivity" />
+
+
+</LinearLayout>

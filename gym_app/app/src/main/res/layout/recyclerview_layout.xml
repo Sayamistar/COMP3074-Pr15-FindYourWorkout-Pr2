@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="90dp">
+
+    <ImageView
+        android:id="@+id/layoutImage"
+        android:src="@drawable/finallogo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/layoutTitle"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="10dp"
+        android:text="Title" />
+
+    <TextView
+        android:id="@+id/layoutDescription"
+        android:layout_width="304dp"
+        android:layout_height="41dp"
+        android:layout_below="@id/layoutTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="17dp"
+        android:maxLines="2"
+        android:singleLine="false"
+        android:text="Description" />
+
+    <TextView
+        android:id="@+id/layoutLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/layoutLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

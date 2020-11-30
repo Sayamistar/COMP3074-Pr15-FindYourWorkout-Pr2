@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#B7C8B6">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:layout_marginTop="15dp"
+        android:background="#B7C8B6">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Find Your Workout"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnAbout"
+            android:background="@drawable/round_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="aboutHandler"
+            android:outlineAmbientShadowColor="@color/black"
+            android:text="About Us" />
+            />
+
+    </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="212dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+
+        android:background="#8FA880">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_span="2"
+                android:text="User Login"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_column="0"
+                android:padding="5dip"
+                android:text="UserName"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edUserName"
+                android:layout_width="183dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="0"
+                android:padding="5dip"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/teal_700" />
+
+            <EditText
+                android:id="@+id/edPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtForgotPassword"
+                android:layout_column="0"
+                android:padding="5dip"
+                android:text="Forgot Password??"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/teal_700" />
+
+            <TextView
+                android:id="@+id/txtRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip"
+                android:text="New User??"
+                android:textColor="@color/black"
+                />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="60dip"
+                android:onClick="loginHandler"
+                android:text="@string/login" />
+
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:onClick="registerHandler"
+                android:padding="3dip"
+                android:text="Register" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:background="#B7C8B6">
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="153dp"
+            android:layout_height="85dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="244dp"
+            android:layout_marginTop="143dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="21dp"
+            android:onClick="exitHandler"
+
+            android:text="Exit" />
+    </RelativeLayout>
+
+</LinearLayout>
