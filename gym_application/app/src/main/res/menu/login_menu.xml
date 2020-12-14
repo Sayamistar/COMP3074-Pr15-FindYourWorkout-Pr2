@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/main_menu" />
+    <item
+        android:title="Add Gym"
+        android:icon="@drawable/about_us_menu"
+        android:id="@+id/mnuAddClient"
+        />
+    <item
+        android:title="Search"
+        android:icon="@drawable/about_us_menu"
+        android:id="@+id/mnuViewClient"
+        />
+    <item
+        android:title="@string/about_us"
+        android:icon="@drawable/about_us_menu"
+        android:id="@+id/mnuAboutUs"
+        />
+
+    <item
+        android:title="Login"
+        android:icon="@drawable/about_us_menu"
+        android:id="@+id/mnuLogIn"
+        />
+
+
+    <item
+        android:title="Log Off"
+        android:icon="@drawable/about_us_menu"
+        android:id="@+id/mnulogOff"
+        />
+    <item
+        android:title="Exit"
+        android:icon="@drawable/about_us_menu"
+        android:id="@+id/mnuExit"
+        />
+</menu>
